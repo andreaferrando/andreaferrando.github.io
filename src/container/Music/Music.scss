@@ -1,0 +1,364 @@
+.music {
+  padding: 100px 0;
+  // background: var(--bg1);
+
+  h2 {
+    font-family: "Amatic SC";
+    margin-top: 30px;
+  }
+}
+
+.container-audio-player {
+  margin: 0 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.audio-player {
+  width: 100%;
+}
+
+.covers__container {
+  margin: 20px;
+}
+
+.music__display {
+  padding: 0px 0;
+}
+
+.cover__display {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.comp {
+  // background: var(--bg);
+}
+
+.video-preview-wrapper {
+  // width: 100%;
+  background-color: green;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.youtube-video {
+  display: flex;
+  justify-content: center;
+
+}
+
+.comingsoon-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 70%;
+  }
+}
+
+.release-soon-component {
+  margin-left: 10px;
+  height: 230px;
+}
+
+.streaming-component {
+  margin-left: 10px;
+}
+
+.streaming-img {
+  width: 100px;
+}
+
+
+.bg-red {
+  background-color: #f13e3e;
+
+  &:hover {
+    background-color: #f19191;
+  }
+
+}
+
+.bg-darkgray {
+  background-color: var(--black);
+
+  &:hover {
+    background-color: #5a5a5a;
+  }
+
+}
+
+.bg-offwhite {
+  background-color: #efefef;
+
+  &:hover {
+    background-color: #cecece;
+  }
+
+}
+
+.youtube-video-style {
+  // position: "absolute",
+  // top: 0,
+  // left: 0,
+  // width: "100px";
+  // height: "100px"
+}
+
+
+
+.cover-img-wrapper {
+  // max-width: 45%;
+  // min-width: 500px;
+  // padding-right: 20px;
+  // padding-top: 20px;
+  display: flex;
+  flex-flow: wrap;
+  background-color: red;
+}
+
+.youtube-video-wrapper {
+  margin-right: 20px;
+  width: "50%"
+}
+
+.streaming-wrapper {
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: fit-content;
+  margin: 7px;
+}
+
+.aacontainer {
+  position: relative;
+  margin: 20px;
+  width: 600px;
+  height: 337.50px;
+
+  //youtube width/height ratio: 1.77777778
+  @media screen and (max-width: 992px) {
+    width: 600px;
+    height: 337.50px;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 430px;
+    height: 241.87px;
+  }
+
+  @media screen and (max-width: 445px) {
+    width: 430px;
+    height: 241.87px;
+  }
+
+  @media screen and (max-width: 392px) {
+    width: 430px;
+    height: 241.87px;
+  }
+
+  @media screen and (max-width: 340px) {
+    width: 430px;
+    height: 241.87px;
+  }
+
+  @media screen and (max-width: 300px) {
+    width: 430px;
+    height: 241.87px;
+  }
+}
+
+.aabox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* for demo purpose  */
+}
+
+.aastack-top {
+  z-index: 9;
+  opacity: 0.5;
+  background-color: #5a5a5a;
+  // margin: 20px;
+  /* for demo purpose  */
+}
+
+.hov-ww {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.playBtn {
+  width: 28%;
+  z-index: 10
+}
+
+.preview-img {
+  width: 100%;
+}
+
+.music__name {
+  h3 {
+    font-family: "American Typewriter", cursive;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  h6 {
+    font-family: "American Typewriter", serif;
+    text-align: center;
+    font-size: 10px;
+    // padding: 10px;
+  }
+}
+
+.music__item {
+  transition: 0.5s ease;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  // background-color: #e4e4e482;
+
+  .music__item-img {
+    text-align: center;
+    padding: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    .blur {
+      filter: blur(8px);
+    }
+  }
+
+  .music__item-about {
+    .music__name {
+      h3 {
+        font-family: "DJ Gross", cursive;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      p {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    .music__item-about-content {
+      padding: 20px 10px;
+      height: auto;
+
+      p {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .music__item-about-tech {
+        text-align: center;
+        padding-top: 10px;
+
+        h5 {
+          font-size: 17px;
+          color: var(--black);
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    .music__item-links {
+      position: relative;
+      bottom: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+
+      .music__item-links-item {
+        width: 50%;
+        font-size: 15px;
+        text-align: center;
+        margin: 10px auto;
+        padding: 5px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      .live {
+        background-color: #ebf5ff;
+
+        a {
+          color: #4489db;
+        }
+      }
+
+      .code {
+        background-color: #ebf5ff;
+
+        a {
+          color: var(--black);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.6%);
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 20px 8px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.music__other {
+  img {
+    transition: 0.4s ease;
+    box-shadow: 0px 7px 20px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    &:hover {
+      transform: translateY(-2%);
+      box-shadow: 0px 5px 20px 6px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.music__other-heading {
+  h3 {
+    color: var(--black);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+    font-family: "Taviraj", serif;
+    padding-top: 30px;
+  }
+}
