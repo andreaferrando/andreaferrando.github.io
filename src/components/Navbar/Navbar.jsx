@@ -66,17 +66,17 @@ const Navbar = () => {
         >
           <ul className="navbar-nav m-auto mb-2 mb-lg-0 text-center">
             <li className={location.pathname === '/' ? "nav-item nav-item-selected" : "nav-item"}> 
-              <a onClick={collapseNav} className="nav-link px-3" href="./">
+              <a onClick={collapseNav} className="nav-link px-3" href="./#news">
                 News
               </a>
             </li>
             <li className={location.pathname === '/music' ? "nav-item nav-item-selected" : "nav-item"}> 
-              <a onClick={collapseNav} className="nav-link px-3" href="music">
+              <a onClick={collapseNav} className="nav-link px-3" href="/music">
                 Music
               </a>
             </li>
             <li className={location.pathname === '/about' ? "nav-item nav-item-selected" : "nav-item"}> 
-              <a onClick={collapseNav} className="nav-link px-3" href="about">
+              <a onClick={collapseNav} className="nav-link px-3" href="/about">
                 About
               </a>
             </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
               <a
                 onClick={collapseNav}
                 className="nav-link px-3"
-                href="contact"
+                href="/contact"
               >
                 Contact
               </a>

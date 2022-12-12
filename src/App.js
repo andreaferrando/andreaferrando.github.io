@@ -21,7 +21,7 @@ const App = () => {
         <Routes>
           <Route
             exact
-            path=""
+            path="/"
             element={
               <>
                 <Header />
@@ -30,7 +30,7 @@ const App = () => {
           />
           <Route
             exact
-            path="music"
+            path="/music"
             element={
               <>
                 <Music />
@@ -39,7 +39,7 @@ const App = () => {
           />
           <Route
             exact
-            path="about"
+            path="/about"
             element={
               <>
                 <About />
@@ -48,14 +48,14 @@ const App = () => {
           />
           <Route
             exact
-            path="contact"
+            path="/contact"
             element={
               <>
                 <FormikContact />
               </>
             }
           />
-          {/* <Route path="*" element={ <Navigate to="/" /> } /> */}
+          <Route path="*" element={ <Navigate to="/" /> } />
         </Routes>
       </BrowserRouter>
       <Footer />
