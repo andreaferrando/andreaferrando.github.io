@@ -16,7 +16,7 @@ initialiseAnalytics()
 const App = () => {
   return (
     <div className="app">
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route
@@ -57,7 +57,7 @@ const App = () => {
           />
           <Route path="*" element={ <Navigate to="/" /> } />
         </Routes>
-      {/* </BrowserRouter> */}
+      </BrowserRouter>
       <Footer />
     </div>
   );

@@ -17,7 +17,7 @@ const Header = () => {
                    <h1 className="header__list">I'M NOT READY TO LET YOU GO</h1>
                    <div>
                     <IoButton
-                      ahref="#/music"
+                      ahref="./music"
                       title = "LISTEN NOW"
                       log = "listen now"
                     />
