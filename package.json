@@ -1,7 +1,7 @@
 {
   "name": "io",
   "version": "1.0.0",
-  "homepage": "https://andreaferrando.github.io/react-gh-pages",
+  "homepage": "https://andreaferrando.github.io",
   "private": true,
   "dependencies": {
     "@cred/neopop-web": "^1.0.0",
@@ -35,7 +35,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
