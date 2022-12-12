@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a64bde5.css",
+    "main.js": "/static/js/main.450423cf.js",
+    "static/media/background.png": "/static/media/background.fd5396ba78fa7c84a3cb.png",
+    "static/media/background3.png": "/static/media/background3.a6498b867184ce68e88e.png",
+    "static/media/being_you_resized.png": "/static/media/being_you_resized.a17b22ba6df25933e6c0.png",
+    "static/media/background_rainbow.png": "/static/media/background_rainbow.09d9bc3b0fb26a36e15f.png",
+    "static/media/io_icon.png": "/static/media/io_icon.824b80b3c76c62e92432.png",
+    "static/media/imnotready.png": "/static/media/imnotready.2cb8181a9361c4f87363.png",
+    "static/media/background2.png": "/static/media/background2.44ed2cfac7f44cea1954.png",
+    "static/media/preview_beingyou.mp3": "/static/media/preview_beingyou.b5911733b8eab8fe507a.mp3",
+    "static/media/profile.png": "/static/media/profile.d7bba096ad93ba96aea7.png",
+    "static/media/imnotready_vinyl.png": "/static/media/imnotready_vinyl.edf358f6bb3671ffe429.png",
+    "static/media/rainbow_background.png": "/static/media/rainbow_background.a36a829d9b0a7de3c29e.png",
+    "static/media/pandora.png": "/static/media/pandora.4cea400ddf9d9c7b5026.png",
+    "static/media/deezer.png": "/static/media/deezer.4aa32e4b146366cf3e7f.png",
+    "static/media/amazon.png": "/static/media/amazon.e8f2ad660adb412de4c3.png",
+    "static/media/coming_soon.png": "/static/media/coming_soon.dfb5781db8c1546b867f.png",
+    "static/media/spotify.png": "/static/media/spotify.0c4ae91bae23217d39c9.png",
+    "static/media/playbtn.png": "/static/media/playbtn.400c37b2fb34f0400c1d.png",
+    "static/media/itunes.png": "/static/media/itunes.9030779f87e330edcf91.png",
+    "static/media/youtube.png": "/static/media/youtube.4ef7c61e03e179289051.png",
+    "static/media/applemusic.png": "/static/media/applemusic.21d59de3455d5f460ddb.png",
+    "index.html": "/index.html",
+    "main.0a64bde5.css.map": "/static/css/main.0a64bde5.css.map",
+    "main.450423cf.js.map": "/static/js/main.450423cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a64bde5.css",
+    "static/js/main.450423cf.js"
+  ]
+}
