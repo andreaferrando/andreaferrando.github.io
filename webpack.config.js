@@ -1,35 +1,51 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = ({ mode } = { mode: "production" }) => {
-    console.log(`mode is: ${mode}`);
+module.exports = {
+  entry: `${__dirname}/src/index.tsx`,
+  output: {
+    path: `${__dirname}/build`,
+    publicPath: '/build/',
+    filename: 'bundle.js',
+  },
 
-    return {
-            mode,
-            entry: "./src/index.js",
-            output: {
-                publicPath: "/",
-                path: path.resolve(__dirname, "build"),
-                filename: "bundle.js"
-            },
-            module: {
-                rules: [
-                 {
-                    test: /\.jpe?g|png$/,
-                    exclude: /node_modules/,
-                    use: ["url-loader", "file-loader"]
+  // generate different source maps for dev and production
+  devtool: process.argv.indexOf('-p') === -1 ? 'eval-source-map' : 'source-map',
+
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+  },
+
+  module: {
+    rules: [
+      // use ts-loader for ts and js files so all files are converted to es5
+      { test: /\.(tsx?|js)$/, exclude: /node_modules/, loader: 'ts-loader' },
+      { test: /\.js$/, loader: 'source-map-loader' },
+    ],
+  },
+
+  // required because the defaults for webpack -p don't remove multiline comments
+  optimization:
+    process.argv.indexOf('-p') === -1
+      ? {}
+      : {
+          minimize: true,
+          minimizer: [
+            new TerserPlugin({
+              terserOptions: {
+                output: {
+                  comments: false,
                 },
-                    {
-                        test: /\.(js|jsx)$/,
-                        exclude: /node_modules/,
-                        loader: "babel-loader"
-                    }
-                ]
-            },
-            plugins: [
-                new HtmlWebpackPlugin({
-                    template: "./public/index.html"
-                }),
-            ]
-        }
+              },
+              extractComments: false,
+            }),
+          ],
+        },
+
+  // to mimic GitHub Pages serving 404.html for all paths
+  // and test spa-github-pages redirect in dev
+  devServer: {
+    historyApiFallback: {
+      rewrites: [{ from: /\//, to: '/404.html' }],
+    },
+  },
 };
