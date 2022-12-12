@@ -9,14 +9,14 @@ import {
 import { Navbar } from "./components";
 import {initialiseAnalytics} from "./GoogleAnalytics";
 import "./App.scss";
-import { Switch, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 initialiseAnalytics()
 
 const App = () => {
   return (
     <div className="app">
-      <Switch>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route
@@ -57,7 +57,7 @@ const App = () => {
           />
           <Route path="*" element={ <Navigate to="/" /> } />
         </Routes>
-      </Switch>
+      </BrowserRouter>
       <Footer />
     </div>
   );
