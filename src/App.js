@@ -9,14 +9,14 @@ import {
 import { Navbar } from "./components";
 import {initialiseAnalytics} from "./GoogleAnalytics";
 import "./App.scss";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 initialiseAnalytics()
 
 const App = () => {
   return (
     <div className="app">
-      <HashRouter>
+      {/* <BrowserRouter> */}
         <Navbar />
         <Routes>
           <Route
@@ -57,7 +57,7 @@ const App = () => {
           />
           <Route path="*" element={ <Navigate to="/" /> } />
         </Routes>
-      </HashRouter>
+      {/* </BrowserRouter> */}
       <Footer />
     </div>
   );
