@@ -1,7 +1,7 @@
 {
   "name": "io",
   "version": "1.0.0",
-  "homepage": "https://andreaferrando.github.io",
+  "homepage": "https://andreaferrando.github.io/",
   "private": true,
   "dependencies": {
     "@cred/neopop-web": "^1.0.0",
