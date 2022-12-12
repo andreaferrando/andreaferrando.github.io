@@ -16,7 +16,7 @@ initialiseAnalytics()
 const App = () => {
   return (
     <div className="app">
-      <HashRouter>
+      <HashRouter basename="/">
         <Navbar />
         <Routes>
           <Route
