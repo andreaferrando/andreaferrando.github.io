@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0a64bde5.css",
-    "main.js": "/static/js/main.4898ad22.js",
+    "main.js": "/static/js/main.241c8dd0.js",
     "static/media/background.png": "/static/media/background.fd5396ba78fa7c84a3cb.png",
     "static/media/background3.png": "/static/media/background3.a6498b867184ce68e88e.png",
     "static/media/being_you_resized.png": "/static/media/being_you_resized.a17b22ba6df25933e6c0.png",
@@ -24,10 +24,10 @@
     "static/media/applemusic.png": "/static/media/applemusic.21d59de3455d5f460ddb.png",
     "index.html": "/index.html",
     "main.0a64bde5.css.map": "/static/css/main.0a64bde5.css.map",
-    "main.4898ad22.js.map": "/static/js/main.4898ad22.js.map"
+    "main.241c8dd0.js.map": "/static/js/main.241c8dd0.js.map"
   },
   "entrypoints": [
     "static/css/main.0a64bde5.css",
-    "static/js/main.4898ad22.js"
+    "static/js/main.241c8dd0.js"
   ]
 }
