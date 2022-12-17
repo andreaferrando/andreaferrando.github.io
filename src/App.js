@@ -58,7 +58,6 @@ const App = () => {
           <Route path="*" element={ <Navigate to="/" /> } />
         </Routes>
       </BrowserRouter>
-      <Footer />
     </div>
   );
 };

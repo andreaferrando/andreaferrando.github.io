@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {isMobile} from 'react-device-detect';
 import './Contact.scss'
 import IoButton from '../../components/IoButton/IoButton.jsx'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -46,12 +47,15 @@ const Contact = () => {
     }
     return errors;
   }
+  
   return (
     <>
       <section data-scroll-index="4" id="contact" className="contact">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
+              {isMobile ? <div className='space' />
+              :
               <div className="contact__infos text-center">
                 <a href="https://open.spotify.com/artist/1FAJs3Ofs68Skmy2M6T3Lz?si=l3jGhsyWTsC-IrmjqgPPFg" target="_blank" rel="noreferrer"><i className="fa-brands fa-spotify"></i></a>
                 <a href="https://music.apple.com/it/artist/io/1579754734" target="_blank" rel="noreferrer"><i className="fa-brands fa-apple"></i></a>
@@ -59,6 +63,7 @@ const Contact = () => {
                 <a href="https://www.instagram.com/andrea_ferrando/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
                 <a href="mailto:andrea.ferrando@icloud.com"><i className="fas fa-envelope"></i></a>
               </div>
+              }
             </div>
           </div>
           <div className="row contact__form">

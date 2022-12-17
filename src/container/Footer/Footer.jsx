@@ -1,13 +1,11 @@
 import React from 'react'
 import './Footer.scss'
-const Footer = () => {
+const Footer = (props) => {
   const year = new Date().getFullYear();
   return (
-    // <footer className='footer'>
-      <div className="container-footer">
-       <p className="footer__copy">Copyright &copy; {year} IO</p>
-       </div>
-    // </footer>
+    <div className="container-footer">
+      <p className="footer__copy">Copyright &copy; {year} IO</p>
+    </div>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { images } from '../../constants';
+import {Footer} from '../'
 import './Header.scss'
 import IoButton from '../../components/IoButton/IoButton.jsx'
 
@@ -29,6 +30,7 @@ const Header = () => {
              </div>
          </div>
      </section>
+     <Footer />
  </>
  )
 }
