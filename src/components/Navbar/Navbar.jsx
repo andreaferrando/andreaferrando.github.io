@@ -41,6 +41,7 @@ const Navbar = () => {
                         <a href="https://music.apple.com/it/artist/io/1579754734" onClick={()=>{log("applemusic")}} target="_blank" rel="noreferrer"><i className="fa-brands fa-apple"></i></a>
                         <a href="https://www.youtube.com/channel/UCjH6CUCoc-Epkq1rtB43agw" onClick={()=>{log("youtube")}} target="_blank" rel="noreferrer"><i className="fa-brands fa-youtube"></i></a>
                         <a href="https://www.instagram.com/andrea_ferrando/" onClick={()=>{log("instagram")}} target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@io.music.artist" onClick={()=>{log("tiktok")}} target="_blank" rel="noreferrer"><i className="fa-brands fa-tiktok"></i></a>
                         <a href="mailto:andrea.ferrando@icloud.com" onClick={()=>{log("email")}}><i className="fas fa-envelope"></i></a>
                      </div>
                </div>
@@ -97,6 +98,7 @@ const Navbar = () => {
                 <a href="https://music.apple.com/it/artist/io/1579754734" target="_blank" rel="noreferrer"><i className="fa-brands fa-apple"></i></a>
                 <a href="https://www.youtube.com/channel/UCjH6CUCoc-Epkq1rtB43agw" target="_blank" rel="noreferrer"><i className="fa-brands fa-youtube"></i></a>
                 <a href="https://www.instagram.com/andrea_ferrando/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@io.music.artist" onClick={()=>{log("tiktok")}} target="_blank" rel="noreferrer"><i className="fa-brands fa-tiktok"></i></a>
                 <a href="mailto:andrea.ferrando@icloud.com"><i className="fas fa-envelope"></i></a>
               </div>
           </div>
